@@ -1,0 +1,40 @@
+# Oii prof aqui temos diferença de conjuntos
+conjuntoA = set()
+conjuntoB = set()
+
+# Pede 3 números para formar o conjunto A
+print("Digite 3 números para o conjunto A:")
+
+# Repete 3 vezes para receber os números
+for i in range(3):
+    # Recebe um número inteiro
+    numero = int(input("Digite um número: "))
+
+    # Adiciona o número ao conjunto A
+    conjuntoA.add(numero)
+
+
+# Pede 3 números para formar o conjunto B
+print("Digite 3 números para o conjunto B:")
+
+# Repete 3 vezes para receber os números
+for i in range(3):
+    # Recebe um número inteiro
+    numero = int(input("Digite um número: "))
+
+    # Adiciona o número ao conjunto B
+    conjuntoB.add(numero)
+
+
+# O símbolo ^ faz a diferença simétrica
+# Ele pega os números que estão em apenas um dos conjuntos
+# Os números que aparecem nos dois conjuntos não entram no resultado
+diferenca_simetrica = conjuntoA ^ conjuntoB
+
+
+# Mostra os conjuntos digitados
+print("Conjunto A:", conjuntoA)
+print("Conjunto B:", conjuntoB)
+
+# Mostra o resultado da diferença simétrica
+print("Diferença simétrica:", diferenca_simetrica)
