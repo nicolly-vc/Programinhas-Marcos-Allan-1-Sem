@@ -1,0 +1,31 @@
+#oi prof aqui é interseção
+conjuntoA = set()
+conjuntoB = set()
+
+# Pede 3 números inteiros para formar o conjunto A
+print("Digite 3 números para o conjunto A:")
+
+for i in range(3):
+    # Recebe o número digitado pelo usuário
+    numero = int(input("Digite um número: "))
+    
+    # Adiciona o número ao conjunto A
+    conjuntoA.add(numero)
+
+# Pede 3 números inteiros para formar o conjunto B
+print("Digite 3 números para o conjunto B:")
+
+for i in range(3):
+    # Recebe o número digitado pelo usuário
+    numero = int(input("Digite um número: "))
+    
+    # Adiciona o número ao conjunto B
+    conjuntoB.add(numero)
+
+# O símbolo & faz a interseção dos conjuntos ou seja, pega somente os números que aparecem em A e em B
+intersecao = conjuntoA & conjuntoB
+
+# Mostra os dois conjuntos e o resultado da interseção
+print("Conjunto A:", conjuntoA)
+print("Conjunto B:", conjuntoB)
+print("Interseção:", intersecao)
