@@ -1,0 +1,27 @@
+# Oii prof aqui é para confirmar a existencia de um número no conjunto
+conjunto = set()
+
+# Pede para o usuário digitar 5 números
+print("Digite 5 números:")
+
+# Repete 5 vezes para receber os números
+for i in range(5):
+    # int transforma o valor digitado em número inteiro
+    numero = int(input("Digite um número: "))
+
+    # Adiciona o número dentro do conjunto
+    conjunto.add(numero)
+
+# Pede um número para verificar se ele está no conjunto
+numero = int(input("Qual número deseja procurar? "))
+
+# O "in" verifica se o número pertence ao conjunto
+if numero in conjunto:
+    print("O número pertence ao conjunto.")
+
+# Caso o número não esteja no conjunto
+else:
+    print("O número não pertence ao conjunto.")
+
+# Mostra todos os números que ficaram no conjunto
+print("Conjunto:", conjunto)
