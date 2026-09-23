@@ -1,0 +1,38 @@
+#Oii prof este aqui indentifica subconjunto
+conjuntoA = set()
+conjuntoB = set()
+
+# Pede 3 números para formar o conjunto A
+print("Digite 3 números para o conjunto A:")
+
+for i in range(3):
+    # Recebe um número inteiro
+    numero = int(input("Digite um número: "))
+
+    # Adiciona o número ao conjunto A
+    conjuntoA.add(numero)
+
+
+# Pede 5 números para formar o conjunto B
+print("Digite 5 números para o conjunto B:")
+
+for i in range(5):
+    # Recebe um número inteiro
+    numero = int(input("Digite um número: "))
+
+    # Adiciona o número ao conjunto B
+    conjuntoB.add(numero)
+
+
+# Mostra os conjuntos criados
+print("Conjunto A:", conjuntoA)
+print("Conjunto B:", conjuntoB)
+
+
+# Verifica se todos os elementos de A também estão em B
+# O método issubset significa "é subconjunto de"
+if conjuntoA.issubset(conjuntoB):
+    print("O conjunto A é subconjunto de B.")
+
+else:
+    print("O conjunto A não é subconjunto de B.")
