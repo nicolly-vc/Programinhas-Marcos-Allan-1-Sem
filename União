@@ -1,0 +1,20 @@
+#Oii prof, aqui uma união de conjuntos
+
+conjuntoA = set()
+conjuntoB = set()
+
+print("Digite 3 números para o conjunto A:")
+for i in range(3):
+    numero = int(input("Digite um número: "))
+    conjuntoA.add(numero)
+
+print("Digite 3 números para o conjunto B:")
+for i in range(3):
+    numero = int(input("Digite um número: "))
+    conjuntoB.add(numero)
+
+uniao = conjuntoA | conjuntoB
+
+print("Conjunto A:", conjuntoA)
+print("Conjunto B:", conjuntoB)
+print("União:", uniao)
